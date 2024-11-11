@@ -1,10 +1,10 @@
-package com.devsuperior.dslist;
+package com.devsuperior.dsgames;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DslistApplicationTests {
+class DsGamesApplicationTests {
 
 	@Test
 	void contextLoads() {

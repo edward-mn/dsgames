@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.devsuperior</groupId>
-	<artifactId>dslist</artifactId>
+	<artifactId>dsgames</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dslist</name>
+	<name>dsgames</name>
 	<description>Intensivo Java Spring</description>
 	<url/>
 	<licenses>
