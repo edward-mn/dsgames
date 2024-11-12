@@ -13,12 +13,15 @@ public class Game {
     private Long id;
     private String title;
     private String genre;
-    private String platfom;
+    private String platforms;
     private String imgUrl;
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
     @Column(name = "game_year")
     private Integer year;
+    private Double score;
 
     public Game() {}
 
@@ -26,20 +29,22 @@ public class Game {
             Long id,
             String title,
             String genre,
-            String platfom,
+            String platforms,
             String imgUrl,
             String shortDescription,
             String longDescription,
-            Integer year
+            Integer year,
+            Double score
     ) {
         this.id = id;
         this.title = title;
         this.genre = genre;
-        this.platfom = platfom;
+        this.platforms = platforms;
         this.imgUrl = imgUrl;
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
         this.year = year;
+        this.score = score;
     }
 
     public Long getId() {
@@ -66,12 +71,12 @@ public class Game {
         this.genre = genre;
     }
 
-    public String getPlatfom() {
-        return platfom;
+    public String getPlatforms() {
+        return platforms;
     }
 
-    public void setPlatfom(String platfom) {
-        this.platfom = platfom;
+    public void setPlatforms(String platforms) {
+        this.platforms = platforms;
     }
 
     public String getImgUrl() {
@@ -106,6 +111,14 @@ public class Game {
         this.year = year;
     }
 
+    public Double getScore() {
+        return score;
+    }
+
+    public void setScore(Double score) {
+        this.score = score;
+    }
+
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;
@@ -114,15 +127,16 @@ public class Game {
         return Objects.equals(id, game.id)
                 && Objects.equals(title, game.title)
                 && Objects.equals(genre, game.genre)
-                && Objects.equals(platfom, game.platfom)
+                && Objects.equals(platforms, game.platforms)
                 && Objects.equals(imgUrl, game.imgUrl)
                 && Objects.equals(shortDescription, game.shortDescription)
                 && Objects.equals(longDescription, game.longDescription)
-                && Objects.equals(year, game.year);
+                && Objects.equals(year, game.year)
+                && Objects.equals(score, game.score);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, genre, platfom, imgUrl, shortDescription, longDescription, year);
+        return Objects.hash(id, title, genre, platforms, imgUrl, shortDescription, longDescription, year, score);
     }
 }
