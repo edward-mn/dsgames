@@ -1,10 +1,12 @@
 package com.devsuperior.dsgames.serices;
 
+import com.devsuperior.dsgames.dto.GameDTO;
 import com.devsuperior.dsgames.dto.GameMinDTO;
 import com.devsuperior.dsgames.entities.Game;
 import com.devsuperior.dsgames.repositories.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -14,10 +16,19 @@ public class GameService {
     @Autowired
     private GameRepository gameRepository;
 
+    @Transactional(readOnly = true)
     public List<GameMinDTO> findAll(){
         var listGame = gameRepository.findAll();
-        List<GameMinDTO> gameDto = listGame.stream().map(GameMinDTO::new).toList();
+        List<GameMinDTO> gameMinDto = listGame.stream().map(GameMinDTO::new).toList();
 
-        return gameDto;
+        return gameMinDto;
+    }
+
+    @Transactional(readOnly = true)
+    public GameDTO findById(Long gameId){
+        Game result = gameRepository.findById(gameId).get();
+        GameDTO gameDTO = new GameDTO(result);
+
+        return gameDTO;
     }
 }
