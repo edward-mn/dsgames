@@ -1,0 +1,8 @@
+[phases]
+setup = "jdk21, maven"
+
+[build]
+cmd = "./mvnw clean package -DskipTests"
+
+[start]
+cmd = "java -jar target/dsgames-0.0.1-SNAPSHOT.jar"
