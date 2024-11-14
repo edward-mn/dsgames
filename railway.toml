@@ -1,2 +1,2 @@
 [build]
-javaVersion = "21"
+JAVA_VERSION = "21"
