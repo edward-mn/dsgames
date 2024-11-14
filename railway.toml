@@ -1,1 +1,1 @@
-java.runtime.version=21
+JAVA_VERSION = "21"
