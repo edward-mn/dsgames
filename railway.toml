@@ -1,5 +1,0 @@
-[build]
-builder = "nixpacks"
-
-[env]
-JAVA_VERSION = "21"
