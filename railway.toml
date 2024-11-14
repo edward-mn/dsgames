@@ -5,9 +5,6 @@ buildCommand = "./mvnw clean package -DskipTests"
 [deploy]
 startCommand = "java -jar target/dsgames-0.0.1-SNAPSHOT.jar"
 healthcheckPath = "/"
-healthcheckTimeout = 100
-restartPolicyType = "on-failure"
 
-# Forçar o uso do Java 21 no ambiente Railway
 [env]
 JAVA_VERSION = "21"
