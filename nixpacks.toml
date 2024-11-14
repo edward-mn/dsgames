@@ -1,5 +1,6 @@
 [phases.setup]
-runtime = "java@21"
+runtime = "java"
+version = "21"
 packages = ["maven"]
 
 [phases.build]
