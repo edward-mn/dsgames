@@ -38,10 +38,12 @@ This project is a web application for managing game lists, developed in Java wit
 - **Homologation**: Uses Docker with PostgreSQL.
 - **Production**: Deployed on Railway with PostgreSQL.
 
-<figure style="text-align: center;">
-  <img src="src/main/resources/static/imgs/domain_model.png" alt="Domain Model Project - Java | DevSuperior" style="display: block; margin: auto;">
-  <figcaption>Domain Model</figcaption>
-</figure>
+<p align="center">
+  <img src="src/main/resources/static/imgs/domain_model.png" alt="Domain Model Project - Java | DevSuperior">
+  <br>
+  Domain Model
+</p>
+
 
 ## 👀 Demo
 
