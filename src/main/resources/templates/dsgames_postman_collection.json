@@ -1,0 +1,15 @@
+{
+	"info": {
+		"_postman_id": "1153f248-911d-40c3-9454-0ca97ec81036",
+		"name": "Export",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15286462"
+	},
+	"item": [
+		{
+			"name": "Games list",
+			"item": [],
+			"description": "Github's Readme: [https://github.com/edward-mn/dsgames](https://github.com/edward-mn/dsgames)"
+		}
+	]
+}
